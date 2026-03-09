@@ -1,0 +1,18 @@
+name: create-monorepo-package
+description: A skill for creating and configuring new packages in a pnpm-based monorepo, including Rollup, TypeScript, and root-level exports setup.
+version: 1.0.0
+instructions: |
+  Follow the steps in SKILL.md to create a new package. 
+  Use the templates in the resources/ folder for configuration files.
+  Update the root package.json and tsconfig.base.json to register the new package.
+authors:
+  - Antigravity
+repository:
+  type: git
+  url: /Users/pidan/Work/Learn/skills/create-monorepo-package
+keywords:
+  - monorepo
+  - pnpm
+  - typescript
+  - rollup
+  - package-creation
