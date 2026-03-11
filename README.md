@@ -7,6 +7,7 @@ This repository is a collection of personal technical skills, best practices, an
 | Skill Name | Agent Capability | Reference Assets |
 | :--- | :--- | :--- |
 | [**Create Monorepo Package**](./create-monorepo-package/SKILL.md) | Scaffolds new packages into the monorepo, handles Rollup/TS config, and registers exports in root. | [Template](./create-monorepo-package/references/package.json.tmpl), [Script](./create-monorepo-package/references/init-package.sh) |
+| [**Use AGENTS.md Rules**](./use-agent-md/SKILL.md) | Enforces project rule reading via `AGENTS.md` (set as the global `contextFileName`) and handles `AGENT.override.md` logic. | [Agent Definition](./use-agent-md/agents/openai.yaml) |
 
 ---
 
