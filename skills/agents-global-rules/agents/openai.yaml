@@ -1,0 +1,22 @@
+name: openai
+description: 使用中文全局代理规则和项目开发约束。规范 AI 智能体在开发时的行为，包括编码前的思考、简单性原则、精准修改以及目标驱动执行。
+version: 1.0.0
+instructions: |
+  本 Skill 规范了 AI 智能体在开发时的行为，包含全局规则以及项目开发约束，旨在通过严格的标准来降低开发错误率并保证代码质量。
+  主要规范如下：
+  1. 编码前先思考：不要假设，声明假设。遇到多种理解或有更简做法时及时向用户汇报，做改动前向用户确认简要实现计划。工作分支规范 `codex/*`。
+  2. 简单至上：用最少代码解决问题，禁止多余特性和抽象，避免局部不必要的函数/包裹/临时函数。
+  3. 精准修改：做出能解决问题的最小修改，不改动无关代码和格式，不主动重构，仅清理自己修改产生的不使用变量或导入。
+  4. 目标驱动执行：定义测试作为成功标准；多步骤任务提供分步计划和验证项；通过独立闭环验证确保质量。
+  5. 项目约束：修改前阅读相关源文件；仅通过包管理器修改依赖；遵守 commit 规范及 attributes 尾注；使用中文制定计划、沟通和 Review 代码；禁止提取单次使用的函数或变量。
+authors:
+  - Antigravity
+repository:
+  type: git
+  url: /Users/pidan/Work/Learn/skills/skills/agents-global-rules
+keywords:
+  - agents.md
+  - global-rules
+  - constraints
+  - best-practices
+  - development-standards

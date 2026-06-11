@@ -1,0 +1,22 @@
+name: openai
+description: 当用户否定、纠正、批评 agent，或要求“以后记住 / 写进 AGENTS.md / 下次不要这样”时，使用本 Skill。该 Skill 会用中文总结可复用经验，让用户确认后，再把通用规则写入 AGENTS.md。
+version: 1.0.0
+instructions: |
+  当用户否定、纠正、批评 agent 的回答或执行方式，或要求“以后记住/写进 AGENTS.md/下次不要这样”时：
+  1. 停止盲目继续：不要立刻继续原任务，先用中文回应：“我先暂停一下，先把这次反馈总结清楚，避免继续沿着错误方向做。”
+  2. 总结用户反馈：用中文总结刚才的问题、用户真正想要的、以及是否适合沉淀为长期规则。
+  3. 分类反馈类型：global_preference（全局规则）、repo_rule（项目规则）、workflow_rule（工作流规则）、style_rule（风格规则）、one_off（一次性反馈）。
+  4. 提炼规则：将反馈改写成明确、短小、可执行的规则。
+  5. 让用户确认：在修改任何文件前，必须先以中文格式提供规则内容、建议写入路径及具体 Markdown 内容，征求用户意见。
+  6. 经用户明确同意后再修改 AGENTS.md 并将记录记录到 .agents/feedback-log.md。
+authors:
+  - Antigravity
+repository:
+  type: git
+  url: /Users/pidan/Work/Learn/skills/skills/feedback-to-agents-md
+keywords:
+  - agents.md
+  - feedback
+  - rules
+  - user preference
+  - agent-improvement
