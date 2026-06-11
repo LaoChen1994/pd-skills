@@ -9,7 +9,7 @@ authors:
   - Antigravity
 repository:
   type: git
-  url: /Users/pidan/Work/Learn/skills/create-monorepo-package
+  url: /Users/pidan/Work/Learn/skills/skills/create-monorepo-package
 keywords:
   - monorepo
   - pnpm
