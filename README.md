@@ -14,6 +14,10 @@ All custom AI assistant skills are organized under the `skills/` directory:
 | [**Use AGENTS.md Rules**](./skills/use-agent-md/SKILL.md) | Enforces project rule reading via `AGENTS.md` (set as the global `contextFileName`) and handles `AGENT.override.md` logic. | [Agent Definition](./skills/use-agent-md/agents/openai.yaml) |
 | [**Feedback to AGENTS.md**](./skills/feedback-to-agents-md/SKILL.md) | Captures user corrections/criticism, summarizes reusable lessons, and persists rules to `AGENTS.md` after approval. | [Agent Definition](./skills/feedback-to-agents-md/agents/openai.yaml) |
 | [**AGENTS.md Chinese Rules**](./skills/agents-global-rules/SKILL.md) | Enforces development standards in Chinese (thinking before coding, simplicity first, surgical changes, goal-driven execution). | [Agent Definition](./skills/agents-global-rules/agents/openai.yaml) |
+| [**Code Preferences**](./skills/code-preferences/SKILL.md) | Applies personal coding, refactoring, and review preferences through 30 separate rules with positive and negative examples. | [Rules](./skills/code-preferences/rules/) |
+| [**PD Frontend CR**](./skills/pd-frontend-cr/SKILL.md) | Applies frontend implementation and review conventions for React, state ownership, async flows, and styles. | [Examples](./skills/pd-frontend-cr/references/examples.md) |
+
+`pd-frontend-cr` reuses rules from `code-preferences`. Keep both skill folders in the same parent directory when installing or copying them. Examples use generic entities and illustrative module paths.
 
 ---
 
@@ -63,7 +67,9 @@ codex-agents-md-template/
     ├── create-monorepo-package/
     ├── use-agent-md/
     ├── feedback-to-agents-md/
-    └── agents-global-rules/
+    ├── agents-global-rules/
+    ├── code-preferences/
+    └── pd-frontend-cr/
 ```
 
 *Created and maintained by Antigravity.*
