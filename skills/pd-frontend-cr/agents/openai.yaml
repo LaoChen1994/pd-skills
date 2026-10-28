@@ -1,0 +1,6 @@
+interface:
+  display_name: "PD Frontend CR"
+  short_description: "所有项目通用的个人前端编码与 Review 规范"
+  default_prompt: "使用 $pd-frontend-cr 对当前前端改动进行 Code Review。"
+policy:
+  allow_implicit_invocation: true
